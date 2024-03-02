@@ -1,68 +1,63 @@
 class Header extends HTMLElement {
-    constructor() {
-      super();
-    }
-    connectedCallback() {
-      this.innerHTML = `
-      <header class="navbar">
-      <div class="container">
-        <nav class="nav_pc row">
-          <div class="nav_image col-md-3">
-              <a href="./index.html">
-                <img src="./images/logo/1. FVL 2022_logo updated 20220621.png" alt="" id="logo-FVL">
-                <img src="./images/logo/2. TPL logo_2017.png" alt="" id="logo-TPL">
-              </a>
-          </div>
-          <div class="col-md-9">
-            <ul class="nav_list">
-              <li class="nav_link"><a href="./index.html">Home</a></li>
-              <li class="nav_link"><a href="./about_us.html">About US</a></li>
-              <li class="nav_link"><a href="./outsourcing.html">Outsourcing</a></li>
-              <li class="nav_link"><a href="./solutions.html">Solutions</a></li>
-              <li class="nav_link"><a href="./workfromhome.html">Work From Home</a></li>
-              <li class="nav_link"><a href="./career.html">Careers</a></li>
-              <li class="nav_link"><a href="./news.html">News</a></li>
-              <li class="nav_link"><a href="./contact.html">Contact</a></li>
-            </ul>
-          </div>
-     </nav>
-     <label for="nav-mobile-input" class="nav_bars-btn">
-      <i class="tab-icon fa-solid fa-bars"></i>
-     </label>
-   
-      <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
-      <label for="nav-mobile-input" class="nav_overlay"></label>
-      <nav class="nav_moblie">
-        <label for="nav-mobile-input" class="nav_mobile-close">
-          <i class="fa-solid fa-xmark"></i>
-        </label>
-        <ul class="nav_list">
-          <li class="nav_moblie-link"><a href="./index.html">Home</a></li>
-          <li class="nav_moblie-link"><a href="./about_us.html">About US</a></li>
-          <li class="nav_moblie-link"><a href="./outsourcing.html">Outsourcing</a></li>
-          <li class="nav_moblie-link"><a href="./solutions.html">Solutions</a></li>
-          <li class="nav_moblie-link"><a href="./workfromhome.html">Work From Home</a></li>
-          <li class="nav_moblie-link"><a href="./career.html">Careers</a></li>
-          <li class="nav_moblie-link"><a href="./news.html">News</a></li>
-          <li class="nav_moblie-link"><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      </div>
-  </header>
-      `;
-    }
+  constructor() {
+    super();
   }
-  
-  customElements.define('header-component', Header);
-  
-  
-  class Footer extends HTMLElement {
-    constructor() {
-      super();
-    }
-  
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a href="./index.html">
+            <img src="./images/logo/1. FVL 2022_logo updated 20220621.png" alt="" id="logo-FVL">
+            <img src="./images/logo/2. TPL logo_2017.png" alt="" id="logo-TPL">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about_us.html">About US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./solutions.html">Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./outsourcing.html">Outsourcing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./workfromhome.html">Work From Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./career.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+      `;
+  }
+}
+
+customElements.define('header-component', Header);
+
+
+class Footer extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
       <div class="footer">
       <div class="container footer_info">
         <div class="row">
@@ -110,7 +105,7 @@ class Header extends HTMLElement {
     </div>
   </div>
       `;
-    }
   }
-  
+}
+
 customElements.define('footer-component', Footer);

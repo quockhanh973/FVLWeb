@@ -15,11 +15,7 @@
     width: 87.9px;
 }
 
-.nav_image {
-    display: flex;
-    left: 10;
-    margin: auto;
-}
+
 
 .navbar {
     display: flex;
@@ -36,136 +32,25 @@
 
 }
 
-.nav_pc {
-    height: auto;
-    width: 100%;
-
-}
-
-.nav_pc .nav_list {
-    display: flex;
-    float: right;
-}
-
 a {
     text-decoration: none;
 }
 
-.nav_pc .nav_list a {
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
     text-transform: uppercase;
     padding: 10px 19px;
-    color: #333;
-    display: block;
     font-weight: bold;
     font-size: 1.3rem;
 }
 
-ul {
-    list-style: none;
-}
-
-li a {
-    text-decoration: none;
-    font-size: 1.3rem;
-}
-
-.nav_bars-btn {
-    height: 30px;
-    width: 30px;
-    color: #333;
-    font-size: 1.6rem;
-    display: none;
-    margin-left: 8px;
-}
-
-.nav_overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(0, 0, 0, 0.3);
-    display: none;
-    animation: fadeIn linear 0.2s;
-}
-
-.nav_moblie {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 320px;
-    max-width: 100%;
-    background-color: #fff;
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: transform linear 0.2s, opacity linear 0.2s;
-}
-
-.nav_moblie-list {
-    margin-top: 24px;
-}
-
-.nav_moblie-link {
-    text-decoration: none;
-    color: #333;
-    display: block;
-    padding: 8px 0px;
-    font-size: 1.4rem;
-}
-
-.nav_mobile-close {
-    font-size: 2rem;
-    color: #666;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-}
-
-.nav-input:checked~.nav_overlay {
-    display: block;
-}
-
-.nav-input:checked~.nav_moblie {
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-header.sticky {
-    background: #fff;
-    opacity: 1;
-    color: #333;
-    padding: 0px 0px;
-    box-shadow: 0 15px 20px rgb(#fff, #fff, #fff, 0.5);
-    animation: fadeIn linear 0.2s;
-
-}
-
-header.sticky #logo-FVL {
-    height: 30px;
-    width: 126.405px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-
-
-header.sticky #logo-TPL {
-    height: 30px;
-    width: 73.25px;
-}
-
-
-header.sticky .nav_list a {
-    color: #333;
-
-}
-
-.nav_list .nav_link a:hover {
+.navbar-light .navbar-nav .nav-link:hover {
     color: rgb(221, 51, 9);
 }
 
-
+.nav-link.active {
+    color: rgb(221, 51, 9) !important;
+}
 
 
 /* Banner */
@@ -308,13 +193,9 @@ p {
     padding-top: 20px;
 }
 
-@media (max-width: 1023px) {
-    .nav_bars-btn {
-        display: block;
-    }
-
-    .nav_pc {
-        display: none;
+@media (max-width: 1999px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 8px 8px;
     }
 }
 
