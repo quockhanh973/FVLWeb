@@ -14,6 +14,7 @@
     justify-items: center;
     
 }
+
 .paragraph-function h2{
     padding-top: 10px;
     height: 60px;
@@ -31,11 +32,7 @@
     width: 100%;
     background-color: #f7f9f8;
     border-radius: 5px;
-    margin-left: 40px;
     padding-left: 56px;
-    
-}
-.process-chart .process-function{
     
 }
 .process-chart .img{
@@ -65,7 +62,6 @@
 .sectionbar{
     margin: 20px 0px;
     background-color: #f0f0f0;
-    height: 680px;
     border-radius: 5px;
     font-size: 1.6rem;
     padding: 0px 10px;
@@ -96,4 +92,22 @@
 }
 .sectionbar-info_company{
     padding: 10px 0px 5px;
+}
+@media screen and (max-width: 992px) {
+    .process-function img {
+      display: none;
+    }
+    .sidebar{
+        padding-top: 40px;
+    }
+    .banner{
+        display: none;
+    }
+        /* .sectionbar{
+            display: flex;
+            
+        }
+        .sectionbar .sectionbar-img{
+            display: none;
+        } */
 }

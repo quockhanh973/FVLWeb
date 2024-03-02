@@ -8,6 +8,9 @@
     padding: 30px 0px 20px;
     font-weight: bold;
 }
+.sidebar-title p{
+    height: 100px;
+}
 .sidebar-content{
     display: flex;
     font-size: 1.3rem;
@@ -26,7 +29,6 @@
 .sectionbar{
     margin: 20px 0px;
     background-color: #f0f0f0;
-    height: 530px;
     border-radius: 5px;
     font-size: 1.6rem;
     padding: 0px 10px;
